@@ -18,4 +18,8 @@ package com.company;
     }
 
     abstract boolean kivesz(int osszeg);
+    public Kartya ujKartya(String kartyaszam){
+        Kartya kartya=new Kartya(this.getTulajdonos(),this,kartyaszam);
+        return kartya;
+    }
 }
