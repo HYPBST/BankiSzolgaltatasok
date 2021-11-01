@@ -13,7 +13,7 @@ public class HitelSzamla extends Szamla {
 
     @Override
     boolean kivesz(int osszeg) {
-        if((this.getAktualisEgyenleg()-osszeg)<this.getHitelKeret()*-1){
+        if((this.getAktualisEgyenleg()-osszeg)<this.getHitelKeret()){
             return false;
         }else {
             this.befizet(osszeg*-1);

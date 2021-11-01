@@ -18,6 +18,14 @@ public class MegtakaritasiSzamla extends Szamla{
 
     @Override
     boolean kivesz(int osszeg) {
-        return false;
+        if(this.getAktualisEgyenleg()-osszeg<0){
+            return false;
+        }else {
+            return true;
+        }
+    }
+    public void kamatJovairas(){
+        this.befizet((int)this.getKamat());
+        setKamat(0);
     }
 }
