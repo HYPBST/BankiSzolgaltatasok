@@ -6,9 +6,9 @@ package com.company;
     private int aktualisEgyenleg;
 
 
-    public Szamla(Tulajdonos tulajdonos, int aktualisEgyenleg) {
+    public Szamla(Tulajdonos tulajdonos) {
         super(tulajdonos);
-        this.aktualisEgyenleg = aktualisEgyenleg;
+        this.aktualisEgyenleg=0;
     }
     public int getAktualisEgyenleg() {
         return aktualisEgyenleg;
